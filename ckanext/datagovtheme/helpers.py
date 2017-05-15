@@ -279,6 +279,8 @@ def convert_top_category_to_list(str_value):
     return list_value
 
 def get_bureau_info(bureau_code):
+    # We don't care about building the dynamic menu dropdowns.
+    return {}
     WEB_PATH = '/fanstatic/datagovtheme/images/logos/'
     LOCAL_PATH = 'fanstatic_library/images/logos/'
 
