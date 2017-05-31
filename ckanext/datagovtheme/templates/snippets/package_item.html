@@ -71,7 +71,7 @@ Example:
             {% if loop.index < resource_limit %}
               <li>
                 <span class="label" data-format="{{ format|lower }}" data-organization="{{ package.organization.title }}">
-                  {{ format }} {% if resource.mirror %}<i class="icon-cloud-download" title="This resource has been mirrored by datamirror.org"></i>
+                  {{ format }} {% if resource.mirror %}<i class="icon-cloud-download" title="This resource has been mirrored by datamirror.org"></i>{% endif %}
                 </span>
               </li>
             {% elif loop.index == resource_limit %}
