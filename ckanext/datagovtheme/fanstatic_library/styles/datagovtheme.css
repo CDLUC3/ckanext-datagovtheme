@@ -671,9 +671,6 @@ a {
 .dataset-item .more:hover {
     color: #222;
 }
-.dataset-item .label:hover {
-    background-color: #333;
-}
 .dataset-item.has-organization .dataset-heading {
     padding-right: 80px;
 }
