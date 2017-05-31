@@ -133,6 +133,11 @@
 	   data-format="{{ (res.format or 'HTML')|lower }}" data-organization="{{ pkg.organization.title }}"
 	> <i class="icon-download-alt"></i> {{ _('Download') }} </a>
 {% endif %}
+{% if res.mirror %}
+<a href="{{ res.mirror }}" class="btn btn-info" data-organization="{{ pkg.organization.title }}">
+  <i class="icon-download-alt"></i> {{ _('Download From Mirror') }}
+</a>
+{% endif %}
 </div>
 {% endblock %}
 </li>
