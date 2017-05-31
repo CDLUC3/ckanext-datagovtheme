@@ -296,3 +296,11 @@ $(".topics li.nav-item").on({
     }
 
 });
+
+$(function(){
+  $("a[href*='/data.gov'], a[href*='.data.gov']").click(
+      function(e) {
+    e.preventDefault();
+    window.open($(this).attr('href'), '_blank');
+  });
+});
